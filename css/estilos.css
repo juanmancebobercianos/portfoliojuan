@@ -1,0 +1,431 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3e8; /* Fondo color crema */
+    color: #333;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f8f8f8;
+}
+
+body.dark-mode header {
+    background-color: #333;
+    color: #f8f8f8;
+}
+
+body.dark-mode nav {
+    background-color: #333;
+}
+
+body.dark-mode nav a {
+    color: #f8f8f8;
+}
+
+body.dark-mode nav a:hover {
+    color: #0073e6;
+}
+
+body.dark-mode main {
+    background-color: #333;
+    color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode section {
+    border-bottom: 2px solid #0073e6;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode p, 
+body.dark-mode a {
+    color: #f8f8f8;
+}
+
+body.dark-mode a:hover {
+    color: #0073e6;
+}
+
+body.dark-mode .proyecto {
+    background-color: #444;
+}
+
+body.dark-mode .certificado {
+    background-color: #444;
+    border-color: #555;
+}
+
+body.dark-mode footer {
+    background-color: #333;
+    color: #f8f8f8;
+}
+
+/* Header fijo */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Añadir un espacio para el contenido debajo del header fijo */
+body {
+    padding-top: 100px; /* Ajusta este valor según la altura del header */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+/* Navegación fija */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 80px; /* Debajo del header */
+    width: 100%;
+    z-index: 999;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0073e6;
+}
+
+/* Foto en inicio */
+#inicio img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* Suaviza la transición */
+}
+
+#inicio img:hover {
+    animation: shake 0.5s; /* Duración de la animación al pasar el mouse */
+    animation-iteration-count: 1; /* Se ejecuta una sola vez al pasar el mouse */
+}
+
+/* Definir la animación shake */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Secciones */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Proyectos */
+.proyecto {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 {
+    margin-top: 0;
+    color: #0073e6;
+}
+
+/* Certificados */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+.contact-info div {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #0073e6;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #555;
+}
+
+/* css Certificados */
+#certificados {
+    text-align: center;
+    padding: 20px;
+}
+
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.certificado {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificado img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.certificado p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; 
+    max-width: 700px; 
+}
+
+#caption {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content, .close {
+    transition: 0.3s;
+}
+
+/* Zoom cuando haces hover en la imagen en el modal */
+.modal-content:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de la galería (mantener los anteriores) */
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.certificado img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para el botón de modo oscuro */
+#toggle-dark-mode {
+    position: absolute; /* Posición absoluta */
+    right: 20px; /* Alinea a la derecha */
+    top: 20px; /* Alinea a la parte superior */
+    font-size: 1.2em; /* Aumenta el tamaño de fuente */
+    padding: 10px 15px; /* Padding más grande */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    background-color: #0073e6; /* Color de fondo */
+    color: white; /* Color del texto */
+    transition: background-color 0.3s; /* Suaviza el cambio de color */
+}
+
+#toggle-dark-mode:hover {
+    background-color: #005bb5; /* Color al pasar el mouse */
+}
+
+/* Posicionar los botones de idioma */
+#language-switcher {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior de la página */
+    left: 10px; /* Ajusta la distancia desde la parte izquierda de la página */
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilos para los botones */
+.language-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%; /* Hace que los botones tengan forma redonda */
+    transition: transform 0.2s ease-in-out;
+}
+
+.language-btn img {
+    border-radius: 50%; /* Hace que las imágenes dentro del botón también sean redondas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añade un leve sombreado a las imágenes */
+}
+
+/* Animación al pasar el cursor sobre los botones */
+.language-btn:hover {
+    transform: scale(1.1); /* Agranda ligeramente el botón al pasar el cursor */
+}
+
+/* Opcional: Un pequeño efecto al hacer clic en los botones */
+.language-btn:active {
+    transform: scale(0.9); /* Reduce el tamaño del botón momentáneamente al hacer clic */
+}
+
+/* Estilos del botón hamburguesa */
+.hamburger {
+    display: none; /* Ocultamos el botón por defecto */
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+/* Las barras del menú hamburguesa */
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Ocultar el menú en pantallas pequeñas */
+nav {
+    display: flex;
+}
+
+/* Estilo para el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Ocultamos el menú por defecto */
+        flex-direction: column; /* Alineamos el menú verticalmente */
+    }
+
+    #hamburger {
+        display: flex; /* Mostramos el botón hamburguesa */
+    }
+}
+
+/* Mostrar el menú al hacer clic en el botón hamburguesa */
+nav.active {
+    display: flex; /* Mostramos el menú */
+}
+
