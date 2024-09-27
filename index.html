@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Juan Mancebo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Favicon -->
+    <link rel="icon" href="img/portfolio.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Hola, Soy Juan</h1>
+        <!-- Botón para alternar entre modo claro y modo nocturno -->
+        <button id="toggle-dark-mode"> 🌙</button>
+
+        <!-- Botones para cambiar el idioma -->
+        <div id="language-switcher">
+            <button id="btn-es" class="language-btn">
+                <img src="img/Captura de pantalla 2024-09-25 173307.png" alt="Spanish" width="30" height="20">
+            </button>
+            <button id="btn-en" class="language-btn">
+                <img src="img/uru usa.png" alt="English" width="30" height="20">
+            </button>
+        </div>
+    </header>
+
+    <button id="hamburger" class="hamburger" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav id="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main id="content">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <img src="img/200px.jpg" alt="Imagen de bienvenida" style="max-width: 100%; height: auto;">
+            <p>Bienvenido a mi portafolio de programación. Aquí encontrarás información sobre mí, mis proyectos y mis
+                certificaciones.</p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy un Fullstack Developer con una base sólida en desarrollo Front End. Me apasiona crear
+                experiencias de usuario atractivas y eficientes, y también tengo experiencia en el desarrollo Back End,
+                lo que me permite trabajar en proyectos completos de principio a fin. Disfruto resolver problemas
+                complejos con soluciones creativas, y siempre estoy en constante aprendizaje para mantenerme al día con
+                las últimas tecnologías y tendencias en desarrollo web.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <div class="proyecto">
+                <h3>Portfolio Juan Mancebo</h3>
+                <p>Este es mi portfolio personal. El sitio web presenta información sobre mis proyectos, certificaciones y un poco sobre mí, todo diseñado para mostrar mis habilidades en el desarrollo web.</p>
+                
+                <p><strong>Lenguajes Utilizados:</strong></p>
+                <ul>
+                    <li>✔️ <strong>HTML:</strong> Para la estructura del contenido.</li>
+                    <li>✔️ <strong>CSS:</strong> Para el diseño y estilo visual del portfolio.</li>
+                    <li>✔️ <strong>JavaScript:</strong> Para funcionalidades interactivas, como el modo oscuro y la apertura de un modal para las imágenes de los certificados.</li>
+                </ul>
+            
+                <p>
+                    Se desarrolló una funcionalidad que permite a los usuarios alternar entre el modo claro y el modo oscuro, mejorando la experiencia de usuario en diferentes condiciones de luz. Además, se implementó un modal para mostrar imágenes de los certificados, asegurando una experiencia de visualización fluida y atractiva.
+                </p>
+                
+                <p>
+                    Se enfrentó el reto de hacer que el portfolio se viera bien en diferentes dispositivos, asegurando que el contenido se adaptara correctamente a pantallas de varios tamaños.
+                </p>
+            
+                <video controls width="100%" height="auto">
+                    <source src="vid/1 Portfolio Juan Mancebo.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            
+
+            <div class="proyecto">
+                <h3>Casa de Cambio</h3>
+                <p>Casa de Cambio es una aplicación web que permite a los usuarios convertir diferentes monedas. Los usuarios pueden seleccionar la moneda de origen, el tipo de operación (compra o venta) y la cantidad que desean convertir. Al hacer clic en el botón "Convertir Moneda", se muestra el resultado de la conversión.</p>
+                
+                <p><strong>Lenguajes Utilizados:</strong></p>
+                <ul>
+                    <li>✔️ <strong>HTML:</strong> Para la estructura básica de la página.</li>
+                    <li>✔️ <strong>CSS:</strong> Utilizando Milligram para un diseño limpio y responsivo, además de un archivo CSS personalizado (estilo.css) para estilos adicionales.</li>
+                    <li>✔️ <strong>JavaScript:</strong> Para manejar la lógica de conversión de monedas y la interacción del usuario.</li>
+                    <li>✔️ <strong>SweetAlert:</strong> Para mostrar alertas atractivas y mejorar la experiencia del usuario.</li>
+                </ul>
+            
+                <p><strong>Desafíos Superados:</strong></p>
+                <ul>
+                    <li><strong>Interactividad:</strong> Implementar la lógica para convertir monedas en función de la selección del usuario y la cantidad ingresada.</li>
+                    <li><strong>Diseño Responsivo:</strong> Asegurarse de que la aplicación se vea bien en diferentes dispositivos y tamaños de pantalla.</li>
+                    <li><strong>Manejo de Errores:</strong> Implementar validaciones para asegurar que los usuarios ingresen datos válidos y manejar situaciones como la conversión de cantidades no numéricas.</li>
+                </ul>
+            
+                <video controls width="100%" height="auto">
+                    <source src="vid/2 Casa de Cambio.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            
+            <div class="proyecto">
+                <h3>Adivina el Número</h3>
+                <p>Adivina el número es un juego interactivo donde los usuarios intentan adivinar un número entre 1 y 10. La idea es simple y divertida, ideal para practicar habilidades de lógica y adivinanza.</p>
+                
+                <p><strong>Lenguajes Utilizados:</strong></p>
+                <ul>
+                    <li>✔️ <strong>HTML:</strong> Para la estructura básica de la página.</li>
+                    <li>✔️ <strong>CSS:</strong> Se utiliza Milligram para un diseño limpio y moderno, además de un archivo CSS personalizado para estilos adicionales.</li>
+                    <li>✔️ <strong>JavaScript:</strong> Para la lógica del juego, donde se manejan las interacciones del usuario y se muestran los resultados.</li>
+                    <li>✔️ <strong>Axios:</strong> Incluido en el proyecto, aunque no utilizado en esta versión, pero podría ser útil para futuras expansiones.</li>
+                </ul>
+            
+                <p><strong>Desafíos Superados:</strong></p>
+                <ul>
+                    <li><strong>Interactividad:</strong> Implementar la lógica para que el juego responda a las entradas del usuario y muestre mensajes adecuados según si el número adivinado es correcto o no.</li>
+                    <li><strong>Historial de Intentos:</strong> Crear un historial para que los jugadores vean sus intentos anteriores, añadiendo un elemento de seguimiento al juego.</li>
+                    <li><strong>Diseño Responsivo:</strong> Asegurar que la interfaz se vea bien en diferentes dispositivos, lo que se logró utilizando un framework CSS ligero.</li>
+                </ul>
+            
+                <video controls width="100%" height="auto">
+                    <source src="vid/3 Adivina el Número.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            
+            <div class="proyecto">
+                <h3>Casa de Venta de Especias Sierra Morena</h3>
+                <p>Sierra Morena es una tienda en línea dedicada a la promoción y comercialización de productos naturales de alta calidad.</p>
+                
+                <p><strong>Lenguajes Utilizados:</strong></p>
+                <ul>
+                    <li>✔️ <strong>HTML5 y CSS3:</strong> Para la estructura y el diseño de la página web.</li>
+                    <li>✔️ <strong>Bootstrap 5:</strong> Para asegurar que el sitio sea responsivo y tenga un diseño atractivo y moderno.</li>
+                    <li>✔️ <strong>JavaScript:</strong> Para mejorar la interactividad del sitio, como la funcionalidad de los botones de compra.</li>
+                </ul>
+            
+                <p><strong>Desafíos Superados:</strong></p>
+                <ul>
+                    <li><strong>Diseño Responsivo:</strong> Asegurarse de que la tienda se vea bien en dispositivos móviles y de escritorio fue un reto, pero gracias a Bootstrap, logramos una interfaz amigable.</li>
+                    <li><strong>Optimización de Carga:</strong> Trabajar en la optimización de imágenes y recursos para que la página cargue rápidamente, mejorando la experiencia del usuario.</li>
+                    <li><strong>Integración de Productos:</strong> La organización y presentación de una amplia variedad de productos de manera clara y atractiva fue un desafío, pero logramos crear un diseño que facilita la navegación.</li>
+                </ul>
+            
+                <video controls width="100%" height="auto">
+                    <source src="vid/4 Sierra Morena.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            
+
+        <section id="certificados">
+            <h2>Certificados 🎓</h2>
+            <div class="certificados-grid">
+                <div class="certificado">
+                    <img src="img/7 Certificado Carrera Full Stack.jfif" alt="Carrera Desarrollo Full Stack"
+                        onclick="openModal(this)">
+                    <p>Carrera Desarrollo Full Stack - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/6 Certificado Backend.jpg" alt="Certificado Programación Backend"
+                        onclick="openModal(this)">
+                    <p>Programación Backend - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/5 Certificado Carrera Frontend React flex.jpeg"
+                        alt="Certificado de desarrollo Frontend React Flex" onclick="openModal(this)">
+                    <p>Carrera de desarrollo Frontend React Flex - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/4 Certificado Carrera Frontend React.jpeg"
+                        alt="Certificado de desarrollo Frontend React" onclick="openModal(this)">
+                    <p>Carrera de desarrollo Frontend React - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/3 Certificado ReactJs.png" alt="Certificado ReactJs" onclick="openModal(this)">
+                    <p>Curso ReactJs - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/2 CODERHOUSE Certificado Java Script.png" alt="Certificado JavaScript"
+                        onclick="openModal(this)">
+                    <p>Curso JavaScript - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/1 CODERHOUSE Certificado Desarrollo Web.png" alt="Certificado Desarrollo Web"
+                        onclick="openModal(this)">
+                    <p>Curso Desarrollo Web - CODERHOUSE</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/Euroinova.jpg" alt="Certificado de VideoGame Tester" onclick="openModal(this)">
+                    <p>Curso 200horas de Probador de Videojuegos - Euroinnova</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/Certificado Testing for Games.jpg" alt="Certificado de VideoGame Tester"
+                        onclick="openModal(this)">
+                    <p>Curso Basics of Testing for Games - Udemy</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/Certificado testing y debugging de Software.jpg"
+                        alt="Certificado Testing y Debugging de Software" onclick="openModal(this)">
+                    <p>Curso Testing y Debugging de Software - Udemy - EdX</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/Certificado Introduction to computers and office_page-0001.jpg"
+                        alt="Certificado de Introduction to computers and office" onclick="openModal(this)">
+                    <p>Curso Introduction to computers and office - Coursera</p>
+                </div>
+                <div class="certificado">
+                    <img src="img/EF SET Certificate.jpg" alt="Certificado EF SET (Inglés)" onclick="openModal(this)">
+                    <p>Certificado EF SET Certificate - Udemy</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Modal para la imagen a tamaño real -->
+        <div id="imgModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+        </div>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <div>
+                    <h4>Celular</h4>
+                    <p>+598 099 302 406</p>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:juanandresmancebo1982@gmail.com">juanandresmancebo1982@gmail.com</a></p>
+                </div>
+                <div>
+                    <h4>Redes Sociales</h4>
+                    <p><a href="https://github.com/juanmancebobercianos" target="_blank">GitHub</a></p>
+                    <p><a href="https://linkedin.com/in/juanchi-mancebo-513676218" target="_blank">LinkedIn</a></p>
+                </div>
+                <div>
+                    <h4>Descargar CV</h4>
+                    <p><a href="img/Cv 18.09.24.pdf" download="JuanMancebo_CV.pdf">Descargar mi CV</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio de Programación</p>
+    </footer>
+
+    <!-- Código JavaScript para alternar entre modo claro y modo oscuro -->
+    <script>
+        const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+
+        // Verificar el estado del modo nocturno en el almacenamiento local
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            toggleDarkModeButton.textContent = '☀️';
+        }
+
+        // Alternar entre modo oscuro y claro
+        toggleDarkModeButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleDarkModeButton.textContent = '☀️';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleDarkModeButton.textContent = '🌙';
+            }
+        });
+
+        // Función para abrir el modal
+        function openModal(imgElement) {
+            const modal = document.getElementById("imgModal");
+            const modalImg = document.getElementById("modalImg");
+            const caption = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+            caption.innerHTML = imgElement.alt;
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            const modal = document.getElementById("imgModal");
+            modal.style.display = "none";
+        }
+
+        // Cambio de idioma
+        const btnEs = document.getElementById('btn-es');
+        const btnEn = document.getElementById('btn-en');
+
+        const textosEs = {
+            inicio: "Inicio",
+            sobreMi: "Sobre mí",
+            proyectos: "Proyectos",
+            certificados: "Certificados",
+            contacto: "Contacto",
+            bienvenido: "Bienvenido a mi portafolio de programación."
+        };
+
+        const textosEn = {
+            inicio: "Home",
+            sobreMi: "About Me",
+            proyectos: "Projects",
+            certificados: "Certificates",
+            contacto: "Contact",
+            bienvenido: "Welcome to my programming portfolio."
+        };
+
+        btnEs.addEventListener('click', () => {
+            translatePage(textosEs);
+        });
+
+        btnEn.addEventListener('click', () => {
+            translatePage(textosEn);
+        });
+
+        function translatePage(texts) {
+            document.querySelector('a[href="#inicio"]').textContent = texts.inicio;
+            document.querySelector('a[href="#sobre-mi"]').textContent = texts.sobreMi;
+            document.querySelector('a[href="#proyectos"]').textContent = texts.proyectos;
+            document.querySelector('a[href="#certificados"]').textContent = texts.certificados;
+            document.querySelector('a[href="#contacto"]').textContent = texts.contacto;
+            document.querySelector('#inicio p').textContent = texts.bienvenido;
+        }
+
+        // Código para el botón de menú hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
